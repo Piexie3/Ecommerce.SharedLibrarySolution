@@ -38,7 +38,7 @@ namespace Ecommerce.SharedLirary.DependencyInjection
         public static IApplicationBuilder UserSharedPloicies(this IApplicationBuilder app)
         {
             app.UseMiddleware<GlobalException>();
-            app.UseMiddleware<ListenToOnlyApiGateway>();
+            //app.UseMiddleware<ListenToOnlyApiGateway>();
             return app;
         }
     }
